@@ -11,7 +11,13 @@ Data Introduction:
 
 The dataset consists approximately 1,584 images of leaf specimens (16 samples each of 99 species) which have been converted to binary black leaves against white backgrounds. Three sets of features are also provided per image: a shape contiguous descriptor, an interior texture histogram, and a ﬁne-scale margin histogram. For each feature, a 64-attribute vector is given per leaf sample.
 
-Note that of the original 100 species, we have eliminated one on account of incomplete associated data in the original dataset.
+
+My code for Leaf Identification Kaggle:
+
+
+I will use four different models from a very basic level up to GridSearch, using only the pre_extracted features. Then I will use Dense Neural Network(DNN) again using the pre_extracetd features. At the end I will use Convolutional Neural Networks to classify grey-scale images (along with pre-extracted features) to identify each image as one of 99 leaf species.
+CNN models will either incorporate multiple convolutional layers as well as merging the features extracted by the convolutions with a pre-extracted feature set (provided by Kaggle) of each leaf image. Each model will be evaluated by minimizing the loss function, log-loss.
+
 
 File descriptions
 
